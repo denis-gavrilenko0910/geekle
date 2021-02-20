@@ -1,0 +1,83 @@
+.hero {
+  // hero background image
+  background-image: linear-gradient(
+      180deg,
+      rgba(23, 23, 22, 0) 67.59%,
+      #171716 108.44%
+    ),
+    url("../img/mobile-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 1920px) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(23, 23, 22, 0) 57.87%,
+        #171716 79.58%
+      ),
+      url("../img/desktop-background.jpg");
+  }
+}
+.hero-text {
+  padding-top: 60px;
+
+  font-family: "Bison";
+
+  font-size: 35px;
+
+  line-height: 32px;
+  color: $main-text-color;
+
+  @media screen and (min-width: 375px) {
+    width: 300px;
+    padding-top: 70px;
+
+    font-size: 43px;
+    line-height: 52px;
+  }
+}
+.hero-img-container {
+  position: relative; //it's for button "buy ticket"
+  margin-top: 24px;
+}
+.hero-img {
+  display: block;
+  width: 100%;
+}
+
+// styles for text under hero img
+
+.hero-info.dive-into {
+  font-family: "Bison";
+  margin-top: 24px;
+}
+.hero-info {
+  font-size: 18px;
+
+  line-height: 22px;
+
+  color: $secondary-text-color;
+  opacity: 0.5;
+}
+.jost-font {
+  margin-top: 3px;
+}
+.automation-testing {
+  margin-top: 0;
+
+  color: $main-text-color;
+  opacity: 1;
+}
+.sammit-date {
+  margin-top: 25px;
+  padding: 6px 0px;
+
+  border: 1px solid $main-text-color;
+
+  text-align: center;
+
+  font-family: "Bison";
+
+  font-size: 20px;
+  line-height: 24px;
+}
