@@ -51,26 +51,19 @@
 .picture-container:not(:first-child) {
   margin-top: 20px;
 }
+
 .picture-container {
   display: flex;
   padding-bottom: 20px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-//   display: inline-block;
-// }
+
 .team-picture {
   display: block;
 }
-// .start-time {
-//   margin-left: 20px;
-//
-// }
-
-.mask-group-svg {
-  display: block;
-  width: 100px;
-  height: 40px;
+.company-logo {
+  margin-top: 10px;
 }
 
 .program-container {
@@ -113,11 +106,15 @@
   }
 }
 
+// program container buttons
+
 .abstract {
   display: block;
   width: 100%;
   height: 30px;
   margin-top: 15px;
+
+  border: solid transparent;
 
   font-family: "Bison";
   font-size: 17px;

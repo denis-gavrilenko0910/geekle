@@ -359,10 +359,8 @@ section.content {
   display: block;
 }
 
-.mask-group-svg {
-  display: block;
-  width: 100px;
-  height: 40px;
+.company-logo {
+  margin-top: 10px;
 }
 
 .program-container {
@@ -416,6 +414,7 @@ section.content {
   width: 100%;
   height: 30px;
   margin-top: 15px;
+  border: solid transparent;
   font-family: "Bison";
   font-size: 17px;
   line-height: 20px;
