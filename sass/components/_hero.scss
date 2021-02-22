@@ -78,6 +78,14 @@
 
   font-family: "Bison";
 
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 17px;
+  @media screen and (min-width: 375px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 65px;
+    line-height: 78px;
+  }
 }

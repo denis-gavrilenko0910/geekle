@@ -198,8 +198,21 @@ section.content {
   border: 1px solid #73f9bc;
   text-align: center;
   font-family: "Bison";
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 375px) {
+  .sammit-date {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .sammit-date {
+    font-size: 65px;
+    line-height: 78px;
+  }
 }
 
 .content {
@@ -209,10 +222,16 @@ section.content {
 .agenda {
   margin-top: 100px;
   font-weight: 900;
-  font-size: 60px;
-  line-height: 87px;
   text-align: center;
-  color: #73f9bc;
+  font-size: 53px;
+  line-height: 87px;
+}
+
+@media screen and (min-width: 375px) {
+  .agenda {
+    font-size: 60px;
+    line-height: 87px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -221,13 +240,6 @@ section.content {
     font-size: 120px;
     line-height: 173px;
   }
-}
-
-.time-zone {
-  font-family: "Bison";
-  font-size: 30px;
-  line-height: 36px;
-  color: #ffffff;
 }
 
 .choose-time-zone {
@@ -258,6 +270,36 @@ section.content {
   }
 }
 
+.select-element {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  padding: 15px 8px;
+  width: 100%;
+  height: 55px;
+  background-color: #73f9bc;
+  cursor: pointer;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+@media screen and (min-width: 375px) {
+  .select-element {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .select-element {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
 .arrow {
   position: absolute;
   top: 45%;
@@ -273,30 +315,19 @@ section.content {
   background-repeat: no-repeat;
 }
 
-.select-element {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  padding: 15px 8px;
-  width: 100%;
-  height: 55px;
-  background-color: #73f9bc;
-  cursor: pointer;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 26px;
-}
-
 .track {
   margin-top: 45px;
   text-align: center;
   font-weight: 900;
-  font-size: 45px;
+  font-size: 37px;
   line-height: 65px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 375px) {
+  .track {
+    font-size: 45px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -334,9 +365,22 @@ section.content {
   margin-top: 30px;
   background-color: #73f9bc;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 120%;
   color: #171716;
+}
+
+@media screen and (min-width: 375px) {
+  .track-items {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .track-items {
+    font-size: 35px;
+    line-height: 51px;
+  }
 }
 
 .list-container {
@@ -368,6 +412,10 @@ section.content {
   margin-left: 40px;
   width: 140px;
   text-align: start;
+}
+
+.program-container.qa {
+  margin-left: 140px;
 }
 
 .name-title {
@@ -417,9 +465,15 @@ section.content {
   margin-top: 15px;
   border: solid transparent;
   font-family: "Bison";
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   background-color: #73f9bc;
+}
+
+@media screen and (min-width: 375px) {
+  .abstract {
+    font-size: 17px;
+  }
 }
 
 .abstract.calendar {
