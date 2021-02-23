@@ -2,6 +2,24 @@
   position: absolute;
   width: 100%;
   top: 10px;
+
+  @media screen and (min-width: 1920px) {
+    top: 0;
+    background-color: $main-background-color;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+.logo-svg {
+  @media screen and (min-width: 1920px) {
+    display: none;
+  }
+}
+.logo-svg-eye {
+  align-items: center;
+  display: inline-block;
+  @media screen and (max-width: 1919px) {
+    display: none;
+  }
 }
 .navigation {
   display: flex;
@@ -19,14 +37,22 @@
 
   @media screen and (min-width: 375px) {
     max-width: 355px;
+  }
+  @media screen and (min-width: 1920px) {
+    max-width: 1160px;
     padding: 10px 17px;
+    border: none;
+  }
+}
+.nav-links {
+  display: flex;
+}
+.burger-menu {
+  @media screen and (min-width: 1920px) {
+    display: none;
   }
 }
 .logo {
   // h1 tag hidden as company logo in svg format
   display: none;
-}
-
-.modal-menu {
-  display: flex;
 }

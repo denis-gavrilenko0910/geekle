@@ -31,18 +31,17 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 375px;
 }
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 100%;
+    width: 375px;
   }
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1920px) {
   .container {
-    width: 1900px;
+    width: 1920px;
   }
 }
 
@@ -50,13 +49,17 @@ body {
   padding: 0 38px;
 }
 
+@media screen and (min-width: 1920px) {
+  .section {
+    padding: 0px 10px;
+  }
+}
+
 section.content {
   padding-bottom: 78px;
 }
 
 .btn.buy {
-  position: absolute;
-  bottom: 0;
   display: block;
   margin: 0;
   padding: 0;
@@ -88,10 +91,52 @@ section.content {
   }
 }
 
+@media screen and (max-width: 1919px) {
+  .btn.buy {
+    position: absolute;
+    bottom: 155px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .btn.buy {
+    margin-top: 41px;
+    width: 360px;
+    height: 65px;
+  }
+}
+
 .header {
   position: absolute;
   width: 100%;
   top: 10px;
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    top: 0;
+    background-color: #171716;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .logo-svg {
+    display: none;
+  }
+}
+
+.logo-svg-eye {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1919px) {
+  .logo-svg-eye {
+    display: none;
+  }
 }
 
 .navigation {
@@ -115,7 +160,26 @@ section.content {
 @media screen and (min-width: 375px) {
   .navigation {
     max-width: 355px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .navigation {
+    max-width: 1160px;
     padding: 10px 17px;
+    border: none;
+  }
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 1920px) {
+  .burger-menu {
+    display: none;
   }
 }
 
@@ -123,46 +187,80 @@ section.content {
   display: none;
 }
 
-.modal-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1920px) {
+  .hero-container {
+    width: 1160px;
+  }
 }
 
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(67.59%, rgba(23, 23, 22, 0)), color-stop(108.44%, #171716)), url("../img/mobile-background.jpg");
   background-image: linear-gradient(180deg, rgba(23, 23, 22, 0) 67.59%, #171716 108.44%), url("../img/mobile-background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 @media screen and (min-width: 1920px) {
   .hero {
+    width: 1920px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(57.87%, rgba(23, 23, 22, 0)), color-stop(79.58%, #171716)), url("../img/desktop-background.jpg");
     background-image: linear-gradient(180deg, rgba(23, 23, 22, 0) 57.87%, #171716 79.58%), url("../img/desktop-background.jpg");
   }
 }
 
 .hero-text {
-  padding-top: 60px;
   font-family: "Bison";
   font-size: 35px;
   line-height: 32px;
   color: #73f9bc;
 }
 
+@media screen and (max-width: 320px) {
+  .hero-text {
+    padding-top: 60px;
+  }
+}
+
 @media screen and (min-width: 375px) {
   .hero-text {
-    width: 300px;
-    padding-top: 70px;
-    font-size: 43px;
+    font-size: 42px;
     line-height: 52px;
   }
 }
 
+@media screen and (max-width: 1919.9px) {
+  .hero-text {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero-text {
+    display: inline-block;
+    width: 500px;
+    padding-top: 176px;
+    font-size: 70px;
+    line-height: 84px;
+  }
+}
+
 .hero-img-container {
-  position: relative;
+  display: block;
   margin-top: 24px;
+}
+
+@media screen and (min-width: 1920px) {
+  .hero-img-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .hero-img {
@@ -175,6 +273,18 @@ section.content {
   margin-top: 24px;
 }
 
+@media screen and (min-width: 1920px) {
+  .hero-info.dive-into {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero-info-container {
+    width: 360px;
+  }
+}
+
 .hero-info {
   font-size: 18px;
   line-height: 22px;
@@ -182,8 +292,22 @@ section.content {
   opacity: 0.5;
 }
 
+@media screen and (min-width: 1920px) {
+  .hero-info {
+    display: block;
+    line-height: 120%;
+    font-size: 35px;
+  }
+}
+
 .jost-font {
   margin-top: 3px;
+}
+
+@media screen and (min-width: 1920px) {
+  .jost-font {
+    margin-top: 10px;
+  }
 }
 
 .automation-testing {
@@ -210,8 +334,13 @@ section.content {
 
 @media screen and (min-width: 1920px) {
   .sammit-date {
+    position: relative;
+    margin-top: 52px;
+    width: 100%;
+    height: 75px;
+    background-color: #171716;
     font-size: 65px;
-    line-height: 78px;
+    line-height: 57px;
   }
 }
 
@@ -230,13 +359,12 @@ section.content {
 @media screen and (min-width: 375px) {
   .agenda {
     font-size: 60px;
-    line-height: 87px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .agenda {
-    font-weight: 900;
+    margin-top: 150px;
     font-size: 120px;
     line-height: 173px;
   }
@@ -435,6 +563,7 @@ section.content {
   font-family: "Bison";
   font-size: 20px;
   line-height: 24px;
+  color: #73f9bc;
 }
 
 @media screen and (min-width: 1900px) {
@@ -451,7 +580,7 @@ section.content {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1920px) {
   .theme {
     font-size: 22px;
     line-height: 32px;
@@ -479,6 +608,12 @@ section.content {
 .abstract.calendar {
   border: 2px solid #ffffff;
   background-color: transparent;
+  color: #ffffff;
+}
+
+.qa {
+  font-size: 14px;
+  line-height: 120%;
   color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

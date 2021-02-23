@@ -104,6 +104,8 @@
   font-size: 20px;
   line-height: 24px;
 
+  color: $main-text-color;
+
   @media screen and (min-width: 1900px) {
     font-size: 25px;
     line-height: 30px;
@@ -117,7 +119,7 @@
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1900px) {
+  @media screen and (min-width: 1920px) {
     font-size: 22px;
     line-height: 32px;
   }
@@ -147,5 +149,10 @@
   border: 2px solid $secondary-text-color;
   background-color: transparent;
 
+  color: $secondary-text-color;
+}
+.qa {
+  font-size: 14px;
+  line-height: 120%;
   color: $secondary-text-color;
 }

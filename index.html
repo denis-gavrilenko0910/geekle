@@ -19,8 +19,10 @@
   </head>
   <body>
     <!-- Site header  -->
+
     <header class="header">
       <!-- Naviganion -->
+
       <div class="container">
         <nav class="navigation">
           <a
@@ -35,7 +37,19 @@
                 href="./img/svg/sprite.svg#icon-geekle"
               ></use>
             </svg>
+            <svg class="logo-svg-eye" width="80" height="62">
+              <use
+                class="logo-icon"
+                href="./img/svg/sprite.svg#eye-logo-company"
+              ></use>
+            </svg>
           </a>
+
+          <ul class="nav-links">
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
 
           <svg class="menu-button" width="15" height="7">
             <use
@@ -50,52 +64,58 @@
     <!-- Main -->
     <main>
       <section class="section hero container">
-        <h2 class="hero-text">Worldwide Software Architecture Summit</h2>
-        <div class="hero-img-container">
-          <picture>
-            <source
-              class="hero-img"
-              srcset="
-                ./img/hero-img/desktop-hero-img@1x.png,
-                ./img/hero-img/desktop-hero-img@2x.png 2x
-              "
-              type="image/png"
-              media="(min-width:1920px)"
-            />
-            <source
-              class="hero-img"
-              srcset="
-                ./img/hero-img/mobile-hero-img@1x.png,
-                ./img/hero-img/mobile-hero-img@2x.png 2x
-              "
-              type="image/png"
-              media="(max-width:1919px)"
-            />
-            <img
-              class="hero-img"
-              src="./img/hero-img/mobile-hero-img@1x.png"
-              alt="A bronze sculpture by Auguste Rodin The Thinker"
-              srcset="./img/hero-img/mobile-hero-img@2x.png 2x"
-            />
-          </picture>
-
-          <button class="btn buy" aria-label="button to buy ticket">
-            buy ticket
-          </button>
+        <div class="hero-container">
+          <h2 class="hero-text">Worldwide Software Architecture Summit</h2>
+          <div class="hero-img-container">
+            <picture>
+              <source
+                class="hero-img"
+                srcset="
+                  ./img/hero-img/desktop-hero-img@1x.png,
+                  ./img/hero-img/desktop-hero-img@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width:1920px)"
+              />
+              <source
+                class="hero-img"
+                srcset="
+                  ./img/hero-img/mobile-hero-img@1x.png,
+                  ./img/hero-img/mobile-hero-img@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width:1919px)"
+              />
+              <img
+                class="hero-img"
+                src="./img/hero-img/mobile-hero-img@1x.png"
+                alt="A bronze sculpture by Auguste Rodin The Thinker"
+                srcset="./img/hero-img/mobile-hero-img@2x.png 2x"
+              />
+            </picture>
+          </div>
+          <div class="hero-info-container">
+            <p class="hero-info dive-into">dive into</p>
+            <p class="hero-info jost-font">Cloud Architecture Optimization:</p>
+            <p class="hero-info automation-testing">Automation&Testing</p>
+            <button
+              id="tickets"
+              class="btn buy"
+              aria-label="button to buy ticket"
+            >
+              buy ticket
+            </button>
+          </div>
+          <p class="sammit-date dive-into">
+            ONLINE, JANUARY 26-27. DURATION: 10:00-19:00
+          </p>
         </div>
-
-        <p class="hero-info dive-into">dive into</p>
-        <p class="hero-info jost-font">Cloud Architecture Optimization:</p>
-        <p class="hero-info automation-testing">Automation&Testing</p>
-        <p class="sammit-date dive-into">
-          ONLINE, JANUARY 26-27. DURATION: 10:00-19:00
-        </p>
       </section>
 
       <!-- main content -->
 
       <section class="section container">
-        <h2 class="agenda">AGENDA</h2>
+        <h2 id="agenda" class="agenda">AGENDA</h2>
         <p class="choose-time-zone">choose your time zone</p>
         <p class="some-talks">
           Some talks are pre-recorded due to speakers’ time-zone differences
@@ -118,7 +138,7 @@
       <section class="section content container">
         <ul>
           <li class="list">
-            <h2 class="career track">Career Track</h2>
+            <h2 id="team" class="career track">Career Track</h2>
             <p class="track-text">
               Aimed to upgrade Developers’ skills to evolve to Software
               Architect
@@ -265,9 +285,7 @@
                       class="company-logo"
                       src="./img/company-logo/mobile/mobile-dazn@1x.png"
                       alt="alexander-kuttig"
-                      srcset="
-                        ./img/company-logo/mobile/mobile-dazn@2x.png 2x
-                      "
+                      srcset="./img/company-logo/mobile/mobile-dazn@2x.png 2x"
                     />
                   </picture>
                 </div>
@@ -322,7 +340,8 @@
                       srcset="./img/team/mobile/mobile-rohit-bhardwaj@2x.png 2x"
                     />
                   </picture>
-                  <source
+                  <picture>
+                    <source
                       class="company-logo"
                       srcset="
                         ./img/company-logo/desktop/desktop-saleforce@1x.png,
@@ -375,8 +394,8 @@
               </div>
 
               <div class="program-container qa">
-                <p><time clsclass="start-time">11:40 — 12:10</time></p>
-                <p>Q&A</p>
+                <time class="start-time">11:40 — 12:10</time>
+                <p class="qa">Q&A</p>
               </div>
             </div>
           </li>
@@ -422,7 +441,8 @@
                       "
                     />
                   </picture>
-                  <source
+                  <picture>
+                    <source
                       class="company-logo"
                       srcset="
                         ./img/company-logo/desktop/desktop-horizon-alpha@1x.png,
@@ -504,7 +524,8 @@
                       srcset="./img/team/mobile/mobile-emma-thomas@2x.png 2x"
                     />
                   </picture>
-                  <source
+                  <picture>
+                    <source
                       class="company-logo"
                       srcset="
                         ./img/company-logo/desktop/desktop-oracle@1x.png,
@@ -526,9 +547,7 @@
                       class="company-logo"
                       src="./img/company-logo/mobile/mobile-oracle@1x.png"
                       alt="alexander-kuttig"
-                      srcset="
-                        ./img/company-logo/mobile/mobile-oracle@2x.png 2x
-                      "
+                      srcset="./img/company-logo/mobile/mobile-oracle@2x.png 2x"
                     />
                   </picture>
                 </div>
@@ -588,7 +607,8 @@
                       "
                     />
                   </picture>
-                  <source
+                  <picture>
+                    <source
                       class="company-logo"
                       srcset="
                         ./img/company-logo/desktop/desktop-nasa@1x.png,
@@ -610,9 +630,7 @@
                       class="company-logo"
                       src="./img/company-logo/mobile/mobile-nasa@1x.png"
                       alt="alexander-kuttig"
-                      srcset="
-                        ./img/company-logo/mobile/mobile-nasa@2x.png 2x
-                      "
+                      srcset="./img/company-logo/mobile/mobile-nasa@2x.png 2x"
                     />
                   </picture>
                 </div>
@@ -642,7 +660,7 @@
 
               <div class="program-container qa">
                 <time class="start-time">11:40 — 12:10</time>
-                <p class="">Q&A</p>
+                <p class="qa">Q&A</p>
               </div>
             </div>
           </li>
