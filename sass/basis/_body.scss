@@ -4,8 +4,10 @@
   // outline: 1px solid red;
   box-sizing: border-box;
 }
-.list {
+.list,
+.nav-items {
   list-style: none;
+  text-decoration: none;
 }
 .list,
 .hero-text,
@@ -47,6 +49,6 @@ body {
     padding: 0px 10px;
   }
 }
-section.content {
-  padding-bottom: 78px;
-}
+// .content {
+//   padding-bottom: 78px;
+// }

@@ -1,0 +1,39 @@
+.radio-btn {
+  @media screen and (max-width: 1919px) {
+    display: none;
+  }
+  display: flex;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 50px;
+}
+
+.select-btn {
+  width: calc(100% / 3);
+  float: left;
+}
+.select-btn input[type="radio"] {
+  display: none;
+}
+
+.select-btn label {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 17px 36px;
+  border: 1px solid #ffffff;
+
+  font-size: 22px;
+  line-height: 32px;
+
+  color: $secondary-text-color;
+}
+
+/* Checked */
+.select-btn input[type="radio"]:checked + label {
+  background-color: $accent-background-color;
+  border: 1px solid $accent-background-color;
+  color: $third-text-color;
+}

@@ -1,3 +1,25 @@
+.track-list {
+  @media screen and (max-width: 1919px) {
+    // display: none;
+  }
+
+  @media screen and (min-width: 1920px) {
+    // display: flex;
+    float: left;
+  }
+}
+.list-container.green {
+  border-color: $main-text-color;
+  margin-left: 20px;
+}
+.track-list.desktop-view {
+  @media screen and (min-width: 1920px) {
+    width: 940px;
+  }
+}
+.list.desktop-view:nth-child(2) {
+  margin-left: 20px;
+}
 .track {
   margin-top: 45px;
 
@@ -17,6 +39,7 @@
   }
 }
 
+//pro track
 .pro {
   color: $main-text-color;
 }
@@ -29,6 +52,9 @@
   color: $secondary-text-color;
 
   @media screen and (min-width: 1920px) {
+    width: 637px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
     line-height: 43px;
   }
@@ -38,6 +64,7 @@
   border: 1px solid #ffffff;
   border-top: none;
 }
+
 .track-items {
   margin-top: 30px;
 
@@ -57,6 +84,7 @@
     line-height: 51px;
   }
 }
+
 .list-container {
   padding: 20px 4px;
 }
@@ -77,12 +105,20 @@
 .company-logo {
   width: 100px;
   margin-top: 10px;
+  @media screen and (min-width: 1920px) {
+    width: 150px;
+  }
 }
 
 .program-container {
-  margin-left: 40px;
-  width: 140px;
-  text-align: start;
+  @media screen and (max-width: 1919px) {
+    margin-left: 40px;
+    width: 140px;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1920px) {
+  }
 }
 .program-container.qa {
   margin-left: 140px;

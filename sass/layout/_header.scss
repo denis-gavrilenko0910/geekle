@@ -37,17 +37,35 @@
 
   @media screen and (min-width: 375px) {
     max-width: 355px;
+    padding: 10px 17px;
   }
   @media screen and (min-width: 1920px) {
     max-width: 1160px;
-    padding: 10px 17px;
+    padding: 19px 0px;
+
     border: none;
   }
 }
 .nav-links {
   display: flex;
+  margin-left: auto;
 }
-.burger-menu {
+.nav.list:not(:first-child) {
+  margin-left: 64px;
+}
+.nav-items {
+  font-family: "Bison";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+
+  color: $secondary-text-color;
+  @media screen and (max-width: 1919px) {
+    display: none;
+  }
+}
+.menu-button {
   @media screen and (min-width: 1920px) {
     display: none;
   }
