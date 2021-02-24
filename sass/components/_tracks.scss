@@ -1,25 +1,20 @@
-.track-list {
-  @media screen and (max-width: 1919px) {
-    // display: none;
+.general-track-container {
+  @media screen and (min-width: 1920px) {
+    display: flex;
   }
+}
 
+.track-container {
   @media screen and (min-width: 1920px) {
-    // display: flex;
-    float: left;
+    width: 50%;
   }
 }
-.list-container.green {
-  border-color: $main-text-color;
-  margin-left: 20px;
-}
-.track-list.desktop-view {
+.track-container:not(:first-child) {
   @media screen and (min-width: 1920px) {
-    width: 940px;
+    margin-left: 20px;
   }
 }
-.list.desktop-view:nth-child(2) {
-  margin-left: 20px;
-}
+
 .track {
   margin-top: 45px;
 
@@ -30,6 +25,7 @@
   line-height: 65px;
 
   color: $secondary-text-color;
+
   @media screen and (min-width: 375px) {
     font-size: 45px;
   }
@@ -47,14 +43,15 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
 
   color: $secondary-text-color;
 
   @media screen and (min-width: 1920px) {
     width: 637px;
+
     margin-left: auto;
     margin-right: auto;
+
     font-size: 30px;
     line-height: 43px;
   }
@@ -63,6 +60,16 @@
 .list-container {
   border: 1px solid #ffffff;
   border-top: none;
+}
+.list-container.green {
+  border-color: $main-text-color;
+}
+.list-container {
+  padding: 20px 4px;
+
+  @media screen and (min-width: 1920px) {
+    padding: 20px 30px;
+  }
 }
 
 .track-items {
@@ -80,33 +87,68 @@
     font-size: 25px;
   }
   @media screen and (min-width: 1920px) {
+    color: transparent;
     font-size: 35px;
     line-height: 51px;
   }
 }
-
-.list-container {
-  padding: 20px 4px;
+.track-items-container {
+  @media screen and (min-width: 1920px) {
+    position: relative;
+  }
 }
+.wide-track-items {
+  position: absolute;
+  top: 0%;
+
+  width: 1900px;
+  font-size: 35px;
+  line-height: 51px;
+  color: $third-text-color;
+  background-color: $accent-background-color;
+
+  @media screen and (max-width: 1919px) {
+    display: none;
+  }
+}
+
 .picture-container:not(:first-child) {
   margin-top: 20px;
+  @media screen and (min-width: 1920px) {
+    margin-top: 40px;
+  }
 }
 
 .picture-container {
   display: flex;
   padding-bottom: 20px;
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
 
+  @media screen and (min-width: 1920px) {
+    text-align: start;
+  }
+}
+.team-card-container {
+  @media screen and (min-width: 1920px) {
+    width: 170px;
+  }
+}
+.picture {
+  display: block;
+  height: fit-content;
+}
 .team-picture {
   display: block;
+
+  @media screen and (min-width: 1920px) {
+    margin-left: 42px;
+    display: block;
+  }
 }
 .company-logo {
-  width: 100px;
   margin-top: 10px;
   @media screen and (min-width: 1920px) {
-    width: 150px;
+    margin-top: 28px;
   }
 }
 
@@ -118,20 +160,21 @@
   }
 
   @media screen and (min-width: 1920px) {
+    margin-left: 50px;
+    width: 410px;
   }
 }
-.program-container.qa {
-  margin-left: 140px;
-}
+
 .name-title {
   font-size: 12px;
   line-height: 17px;
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1900px) {
+  @media screen and (min-width: 1920px) {
     font-size: 20px;
     line-height: 29px;
+    margin-top: 10px;
   }
 }
 
@@ -142,7 +185,7 @@
 
   color: $main-text-color;
 
-  @media screen and (min-width: 1900px) {
+  @media screen and (min-width: 1920px) {
     font-size: 25px;
     line-height: 30px;
   }
@@ -156,13 +199,18 @@
   color: $secondary-text-color;
 
   @media screen and (min-width: 1920px) {
+    margin-top: 6px;
     font-size: 22px;
     line-height: 32px;
   }
 }
 
 // program container buttons
-
+.team-card-buttons {
+  @media screen and (min-width: 1920px) {
+    display: flex;
+  }
+}
 .abstract {
   display: block;
   width: 100%;
@@ -180,15 +228,46 @@
   @media screen and (min-width: 375px) {
     font-size: 17px;
   }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 40px;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .abstract.calendar {
   border: 2px solid $secondary-text-color;
   background-color: transparent;
 
   color: $secondary-text-color;
+
+  @media screen and (min-width: 1920px) {
+    margin-left: 40px;
+  }
 }
-.qa {
+.questions {
   font-size: 14px;
   line-height: 120%;
   color: $secondary-text-color;
+
+  @media screen and (min-width: 1920px) {
+    margin-left: 298px;
+    font-size: 25px;
+    line-height: 36px;
+  }
+}
+.program-container.qa {
+  @media screen and (max-width: 1919px) {
+    margin-left: 140px;
+  }
+  @media screen and (min-width: 1920px) {
+    display: flex;
+    margin-left: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    width: 100%;
+  }
 }
