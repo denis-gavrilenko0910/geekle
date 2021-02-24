@@ -295,7 +295,8 @@ body {
 
 .hero-text {
   font-family: "Bison";
-  font-size: 35px;
+  font-size: 33px;
+  font-display: swap;
   line-height: 32px;
   color: #73f9bc;
 }
@@ -400,7 +401,7 @@ body {
   border: 1px solid #73f9bc;
   text-align: center;
   font-family: "Bison";
-  font-size: 17px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 375px) {
@@ -672,15 +673,38 @@ body {
 }
 
 .picture-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+@media screen and (max-width: 1919px) {
+  .picture-container {
+    position: relative;
+    padding-right: 10px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .picture-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+  }
+}
+
+.team-card-container {
+  margin-left: 126px;
+}
+
+@media screen and (min-width: 375px) {
+  .team-card-container {
+    margin-left: 142px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .team-card-container {
     text-align: start;
   }
 }
@@ -688,29 +712,61 @@ body {
 @media screen and (min-width: 1920px) {
   .team-card-container {
     width: 170px;
+    margin-left: 0;
   }
 }
 
-.picture {
-  display: block;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.team-picture {
-  display: block;
+@media screen and (max-width: 1919px) {
+  .logo-picture {
+    width: 100px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-  .team-picture {
-    margin-left: 42px;
+  .logo-picture {
     display: block;
+    width: 150px;
+  }
+}
+
+.team-photo {
+  width: 100px;
+}
+
+@media screen and (max-width: 1919px) {
+  .team-photo {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .team-photo {
+    display: block;
+    width: 150px;
+    margin-left: 42px;
   }
 }
 
 .company-logo {
   margin-top: 10px;
+  bottom: 37%;
+}
+
+@media screen and (min-width: 375px) {
+  .company-logo {
+    bottom: 31%;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .company-logo {
+    position: absolute;
+    left: 0%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -719,10 +775,18 @@ body {
   }
 }
 
+.program-container {
+  margin-left: 126px;
+}
+
+@media screen and (min-width: 375px) {
+  .program-container {
+    margin-left: 142px;
+  }
+}
+
 @media screen and (max-width: 1919px) {
   .program-container {
-    margin-left: 40px;
-    width: 140px;
     text-align: start;
   }
 }
@@ -833,7 +897,7 @@ body {
 
 @media screen and (min-width: 1920px) {
   .questions {
-    margin-left: 298px;
+    margin-left: 310px;
     font-size: 25px;
     line-height: 36px;
   }
