@@ -2,6 +2,7 @@
 **Landing page for Worldwide Software Architecture Summit**
 
 **This page was written using HTML5 folowing semantic rules and SASS.**
+
 *a few preview pictures for you*
 
 
