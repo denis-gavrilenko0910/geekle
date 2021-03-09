@@ -1,5 +1,5 @@
 .section.hero {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     padding-top: 176px;
   }
 }
@@ -9,7 +9,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     width: 1160px;
   }
 }
@@ -24,6 +24,16 @@
   background-repeat: no-repeat;
   background-position: top;
 
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+
+    background-image: linear-gradient(
+        180deg,
+        rgba(23, 23, 22, 0) 57.87%,
+        #171716 79.58%
+      ),
+      url("../img/desktop-background.jpg");
+  }
   @media screen and (min-width: 1920px) {
     width: 1920px;
 
@@ -50,10 +60,10 @@
     font-size: 42px;
     line-height: 52px;
   }
-  @media screen and (max-width: 1919.9px) {
+  @media screen and (max-width: 1439.99px) {
     padding-top: 70px;
   }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     display: inline-block;
     width: 500px;
 
@@ -65,7 +75,7 @@
   display: block;
   margin-top: 24px;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -82,12 +92,12 @@
   font-family: "Bison";
 
   margin-top: 24px;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-top: 30px;
   }
 }
 .hero-info-container {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     width: 360px;
   }
 }
@@ -98,7 +108,7 @@
   color: $secondary-text-color;
   opacity: 0.5;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     display: block;
 
     line-height: 120%;
@@ -107,7 +117,7 @@
 }
 .jost-font {
   margin-top: 3px;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-top: 10px;
   }
 }
@@ -133,15 +143,23 @@
     line-height: 24px;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin-top: 52px;
     width: 100%;
-    height: 75px;
+    height: 65px;
 
     background-color: $main-background-color;
 
-    font-size: 65px;
+    font-size: 60px;
     line-height: 57px;
+  }
+  @media screen and (min-width: 1920px) {
+    height: 75px;
+    font-size: 65px;
   }
 }

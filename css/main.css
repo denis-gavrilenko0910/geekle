@@ -33,11 +33,19 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding: 0 38px;
 }
 
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0px 10px;
+    width: 1440px;
   }
 }
 
@@ -47,22 +55,12 @@ body {
   }
 }
 
-.section {
-  padding: 0 38px;
-}
-
-@media screen and (min-width: 1920px) {
-  .section {
-    padding: 0px 10px;
-  }
-}
-
 .content {
   padding-top: 100px;
   padding-bottom: 78px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .content {
     padding-top: 150px;
   }
@@ -100,14 +98,14 @@ body {
   }
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .btn.buy {
     position: absolute;
     bottom: 155px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .btn.buy {
     margin-top: 41px;
     width: 360px;
@@ -125,7 +123,7 @@ body {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .radio-btn {
     display: none;
   }
@@ -164,7 +162,7 @@ body {
   top: 10px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1500px) {
   .header {
     top: 0;
     background-color: #171716;
@@ -172,7 +170,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1500px) {
   .logo-svg {
     display: none;
   }
@@ -185,7 +183,7 @@ body {
   display: inline-block;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1499.99px) {
   .logo-svg-eye {
     display: none;
   }
@@ -216,7 +214,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1500px) {
   .navigation {
     max-width: 1160px;
     padding: 19px 0px;
@@ -244,13 +242,13 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1499.99px) {
   .nav-items {
     display: none;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1500px) {
   .menu-button {
     display: none;
   }
@@ -260,7 +258,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .section.hero {
     padding-top: 176px;
   }
@@ -272,7 +270,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .hero-container {
     width: 1160px;
   }
@@ -283,6 +281,14 @@ body {
   background-image: linear-gradient(180deg, rgba(23, 23, 22, 0) 67.59%, #171716 108.44%), url("../img/mobile-background.jpg");
   background-repeat: no-repeat;
   background-position: top;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(57.87%, rgba(23, 23, 22, 0)), color-stop(79.58%, #171716)), url("../img/desktop-background.jpg");
+    background-image: linear-gradient(180deg, rgba(23, 23, 22, 0) 57.87%, #171716 79.58%), url("../img/desktop-background.jpg");
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -314,13 +320,13 @@ body {
   }
 }
 
-@media screen and (max-width: 1919.9px) {
+@media screen and (max-width: 1439.99px) {
   .hero-text {
     padding-top: 70px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .hero-text {
     display: inline-block;
     width: 500px;
@@ -334,7 +340,7 @@ body {
   margin-top: 24px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .hero-img-container {
     position: absolute;
     right: 0;
@@ -352,13 +358,13 @@ body {
   margin-top: 24px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .hero-info.dive-into {
     margin-top: 30px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .hero-info-container {
     width: 360px;
   }
@@ -371,7 +377,7 @@ body {
   opacity: 0.5;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .hero-info {
     display: block;
     line-height: 120%;
@@ -383,7 +389,7 @@ body {
   margin-top: 3px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .jost-font {
     margin-top: 10px;
   }
@@ -411,15 +417,31 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .sammit-date {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 52px;
     width: 100%;
-    height: 75px;
+    height: 65px;
     background-color: #171716;
-    font-size: 65px;
+    font-size: 60px;
     line-height: 57px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .sammit-date {
+    height: 75px;
+    font-size: 65px;
   }
 }
 
@@ -440,6 +462,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .agenda {
+    font-size: 110px;
+    line-height: 150px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .agenda {
     font-size: 120px;
@@ -453,6 +482,13 @@ body {
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1440px) {
+  .choose-time-zone {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -470,7 +506,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .some-talks {
     margin-top: 30px;
     font-size: 20px;
@@ -484,7 +520,7 @@ body {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .select-time-zone.mobile {
     display: none;
   }
@@ -513,7 +549,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .select-element {
     font-size: 22px;
     line-height: 32px;
@@ -535,7 +571,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .general-track-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -543,13 +579,13 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .track-container {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .track-container:not(:first-child) {
     margin-left: 20px;
   }
@@ -567,6 +603,13 @@ body {
 @media screen and (min-width: 375px) {
   .track {
     font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .track {
+    font-size: 75px;
+    line-height: 100px;
   }
 }
 
@@ -588,7 +631,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .track-text {
     width: 637px;
     margin-left: auto;
@@ -609,6 +652,12 @@ body {
 
 .list-container {
   padding: 20px 4px;
+}
+
+@media screen and (min-width: 1440px) {
+  .list-container {
+    padding: 10px 15px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -632,7 +681,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .track-items {
     color: transparent;
     font-size: 35px;
@@ -640,7 +689,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .track-items-container {
     position: relative;
   }
@@ -649,21 +698,39 @@ body {
 .wide-track-items {
   position: absolute;
   top: 0%;
-  width: 1900px;
+  width: 1480px;
   font-size: 35px;
   line-height: 51px;
   color: #171716;
   background-color: #73f9bc;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .wide-track-items {
     display: none;
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .wide-track-items {
+    width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wide-track-items {
+    width: 1880px;
+  }
+}
+
 .picture-container:not(:first-child) {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .picture-container:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -677,14 +744,14 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .picture-container {
     position: relative;
     padding-right: 10px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .picture-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -703,9 +770,16 @@ body {
   }
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .team-card-container {
     text-align: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team-card-container {
+    width: 106px;
+    margin-left: 0;
   }
 }
 
@@ -716,16 +790,15 @@ body {
   }
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (min-width: 1440px) {
   .logo-picture {
-    width: 100px;
+    display: block;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .logo-picture {
     display: block;
-    width: 150px;
   }
 }
 
@@ -733,7 +806,7 @@ body {
   width: 100px;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .team-photo {
     position: absolute;
     top: 0;
@@ -743,11 +816,18 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .team-photo {
     display: block;
-    width: 150px;
+    width: 140px;
+    margin-left: 22px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .team-photo {
     margin-left: 42px;
+    width: 150px;
   }
 }
 
@@ -762,16 +842,23 @@ body {
   }
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .company-logo {
     position: absolute;
     left: 0%;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .company-logo {
     margin-top: 28px;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .company-logo {
+    width: 150px;
   }
 }
 
@@ -785,9 +872,16 @@ body {
   }
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .program-container {
     text-align: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .program-container {
+    margin-left: 30px;
+    width: 410px;
   }
 }
 
@@ -804,11 +898,17 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1440px) {
+  .name-title {
+    font-size: 22px;
+    line-height: 29px;
+    margin-top: 10px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .name-title {
     font-size: 20px;
-    line-height: 29px;
-    margin-top: 10px;
   }
 }
 
@@ -819,7 +919,7 @@ body {
   color: #73f9bc;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .start-time {
     font-size: 25px;
     line-height: 30px;
@@ -833,15 +933,22 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .theme {
     margin-top: 6px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .theme {
     font-size: 22px;
     line-height: 32px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .team-card-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -867,7 +974,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .abstract {
     margin-top: 40px;
     width: 160px;
@@ -883,7 +990,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .abstract.calendar {
     margin-left: 40px;
   }
@@ -895,7 +1002,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .questions {
     margin-left: 310px;
     font-size: 25px;
@@ -903,13 +1010,13 @@ body {
   }
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1439.99px) {
   .program-container.qa {
     margin-left: 140px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .program-container.qa {
     display: -webkit-box;
     display: -ms-flexbox;

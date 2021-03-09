@@ -1,16 +1,16 @@
 .general-track-container {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
   }
 }
 
 .track-container {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     width: 50%;
   }
 }
 .track-container:not(:first-child) {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-left: 20px;
   }
 }
@@ -29,6 +29,10 @@
   @media screen and (min-width: 375px) {
     font-size: 45px;
   }
+  @media screen and (min-width: 1440px) {
+    font-size: 75px;
+    line-height: 100px;
+  }
   @media screen and (min-width: 1920px) {
     font-size: 80px;
     line-height: 116px;
@@ -46,7 +50,7 @@
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     width: 637px;
 
     margin-left: auto;
@@ -67,6 +71,9 @@
 .list-container {
   padding: 20px 4px;
 
+  @media screen and (min-width: 1440px) {
+    padding: 10px 15px;
+  }
   @media screen and (min-width: 1920px) {
     padding: 20px 30px;
   }
@@ -86,14 +93,14 @@
   @media screen and (min-width: 375px) {
     font-size: 25px;
   }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     color: transparent;
     font-size: 35px;
     line-height: 51px;
   }
 }
 .track-items-container {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     position: relative;
   }
 }
@@ -101,19 +108,28 @@
   position: absolute;
   top: 0%;
 
-  width: 1900px;
+  width: 1480px;
   font-size: 35px;
   line-height: 51px;
   color: $third-text-color;
   background-color: $accent-background-color;
 
-  @media screen and (max-width: 1919px) {
+  @media screen and (max-width: 1439.99px) {
     display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 1880px;
   }
 }
 
 .picture-container:not(:first-child) {
   margin-top: 20px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 20px;
+  }
   @media screen and (min-width: 1920px) {
     margin-top: 40px;
   }
@@ -123,12 +139,12 @@
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-  @media screen and (max-width: 1919px) {
+  @media screen and (max-width: 1439.99px) {
     position: relative;
     padding-right: 10px;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     text-align: start;
   }
@@ -139,8 +155,12 @@
   @media screen and (min-width: 375px) {
     margin-left: 142px;
   }
-  @media screen and (max-width: 1919px) {
+  @media screen and (max-width: 1439.99px) {
     text-align: start;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 106px;
+    margin-left: 0;
   }
   @media screen and (min-width: 1920px) {
     width: 170px;
@@ -148,27 +168,30 @@
   }
 }
 .logo-picture {
-  @media screen and (max-width: 1919px) {
-    width: 100px;
+  @media screen and (min-width: 1440px) {
+    display: block;
   }
   @media screen and (min-width: 1920px) {
     display: block;
-    width: 150px;
   }
 }
 
 .team-photo {
   width: 100px;
 
-  @media screen and (max-width: 1919px) {
+  @media screen and (max-width: 1439.99px) {
     position: absolute;
     top: 0;
     display: flex;
   }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     display: block;
-    width: 150px;
+    width: 140px;
+    margin-left: 22px;
+  }
+  @media screen and (min-width: 1920px) {
     margin-left: 42px;
+    width: 150px;
   }
 }
 .company-logo {
@@ -178,12 +201,16 @@
   @media screen and (min-width: 375px) {
     bottom: 31%;
   }
-  @media screen and (max-width: 1919px) {
+  @media screen and (max-width: 1439.99px) {
     position: absolute;
     left: 0%;
   }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-top: 28px;
+    width: 120px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 150px;
   }
 }
 
@@ -194,8 +221,13 @@
     margin-left: 142px;
   }
 
-  @media screen and (max-width: 1919px) {
+  @media screen and (max-width: 1439.99px) {
     text-align: start;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 30px;
+    width: 410px;
   }
 
   @media screen and (min-width: 1920px) {
@@ -210,10 +242,13 @@
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1920px) {
-    font-size: 20px;
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
     line-height: 29px;
     margin-top: 10px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
   }
 }
 
@@ -224,7 +259,7 @@
 
   color: $main-text-color;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     font-size: 25px;
     line-height: 30px;
   }
@@ -237,8 +272,12 @@
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-top: 6px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  @media screen and (min-width: 1920px) {
     font-size: 22px;
     line-height: 32px;
   }
@@ -246,7 +285,7 @@
 
 // program container buttons
 .team-card-buttons {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
   }
 }
@@ -268,7 +307,7 @@
     font-size: 17px;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-top: 40px;
     width: 160px;
     height: 40px;
@@ -282,7 +321,7 @@
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-left: 40px;
   }
 }
@@ -291,17 +330,17 @@
   line-height: 120%;
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     margin-left: 310px;
     font-size: 25px;
     line-height: 36px;
   }
 }
 .program-container.qa {
-  @media screen and (max-width: 1919px) {
+  @media screen and (max-width: 1439.99px) {
     margin-left: 140px;
   }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     margin-left: 0;
     padding-top: 40px;
