@@ -107,9 +107,15 @@ body {
 
 @media screen and (min-width: 1440px) {
   .btn.buy {
-    margin-top: 41px;
+    margin-top: 35px;
     width: 360px;
     height: 65px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .btn.buy {
+    margin-top: 41px;
   }
 }
 
@@ -162,7 +168,7 @@ body {
   top: 10px;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1440px) {
   .header {
     top: 0;
     background-color: #171716;
@@ -170,7 +176,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1440px) {
   .logo-svg {
     display: none;
   }
@@ -183,7 +189,7 @@ body {
   display: inline-block;
 }
 
-@media screen and (max-width: 1499.99px) {
+@media screen and (max-width: 1439.99px) {
   .logo-svg-eye {
     display: none;
   }
@@ -217,8 +223,13 @@ body {
 @media screen and (min-width: 1440px) {
   .navigation {
     max-width: 1160px;
-    padding: 19px 0px;
     border: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .navigation {
+    padding: 19px 0px;
   }
 }
 
@@ -234,6 +245,7 @@ body {
 }
 
 .nav-items {
+  padding: 15px 0;
   font-family: "Bison";
   font-style: normal;
   font-weight: bold;
@@ -242,13 +254,13 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1499.99px) {
+@media screen and (max-width: 1439.99px) {
   .nav-items {
     display: none;
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1440px) {
   .menu-button {
     display: none;
   }
@@ -259,6 +271,12 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+  .section.hero {
+    padding-top: 135px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
   .section.hero {
     padding-top: 176px;
   }
@@ -428,7 +446,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 52px;
+    margin-top: 40px;
     width: 100%;
     height: 65px;
     background-color: #171716;
@@ -439,6 +457,7 @@ body {
 
 @media screen and (min-width: 1920px) {
   .sammit-date {
+    margin-top: 52px;
     height: 75px;
     font-size: 65px;
   }
