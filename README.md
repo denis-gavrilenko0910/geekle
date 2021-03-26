@@ -1,7 +1,7 @@
 # geekle
 **Landing page for Worldwide Software Architecture Summit**
 
-**This page was written using HTML5 folowing semantic rules and SASS.**
+**This page was written using HTML5 folowing semantic rules and with SASS preprocessor.**
 
 *a few preview pictures for you*
 
